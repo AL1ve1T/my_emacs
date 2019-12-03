@@ -1,0 +1,128 @@
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+conda install nomkl
+python app.py 
+python app.py 
+pip uninstall xgboost
+pip uninstall xgboost
+python app.py 
+cp -R ../../ch6/templates/ ./templates
+man cp
+ls
+ls templates/
+rm -f ./templates/#index.html\# 
+ls templates/
+python ../../ch6/app.py 
+python ../../ch6/app.py 
+python ../../ch6/app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+ls
+ls templates/
+rm -f templates/index.html\~
+ls templates/
+ls templates/
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+cp templates/index.html ../../ch6/templates/index.html 
+python ../../ch6/app.py 
+python ../../ch6/app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app > report.txt
+cat report.txt 
+python app > report.txt
+cat report.txt 
+rm -f report.txt
+python app.py | tee -a report.txt
+cat report.txt 
+rm -f report.txt
+python app.py | tee -a report.txt
+python app.py | tee -a report.txt
+python app.py | tee -a report.txt
+python app.py | tee -a report.txt
+python app.py | tee -a report.txt
+python app.py | tee -a report.txt
+python app.py
+python app.py
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+python app.py 
+rm -f TEMP 
+python app.py 
+git status
+rm -rf ML_Project_7329516_6446136.zip
+rm -rf ML_Project_7329516_6446136/
+git status
+rm -f TEMP 
+git status
+git reset ../Slides.pptx ../\~\$Slides.pptx
+git status
+git rm -rf .DS_Store 
+git rm -rf ./DS_Store 
+git rm -rf ./.DS_Store 
+rm -rf .DS_Store 
+git status
+git reset dataset.py.save 
+git status
+git add README.md ../Slides.pptx plot/ report.txt templates/
+git status
+git commit -m 'Api and brief doc'
+git push origin master
