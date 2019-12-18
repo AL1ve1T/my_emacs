@@ -25,19 +25,18 @@
 (require 'neotree)
 (tool-bar-mode -1)
 
-" End of User Settings"
+(desktop-load-default)
+(desktop-read)
 
-(global-set-key (kbd "TAB") 'self-insert-command)
-(setq-default tab-width 4)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (## company))))
+" End of User Settings"
+ '(package-selected-packages (quote (## company)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(require 'tramp)
+(set-default 'tramp-auto-save-directory "C:\\Users\\alive\\AppData\\Local\\Temp")
+(set-default 'tramp-default-method "plink")

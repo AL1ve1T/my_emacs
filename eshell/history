@@ -1,128 +1,128 @@
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-conda install nomkl
-python app.py 
-python app.py 
-pip uninstall xgboost
-pip uninstall xgboost
-python app.py 
-cp -R ../../ch6/templates/ ./templates
-man cp
 ls
-ls templates/
-rm -f ./templates/#index.html\# 
-ls templates/
-python ../../ch6/app.py 
-python ../../ch6/app.py 
-python ../../ch6/app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
+ls Final_prj/
+git clone https://github.com/katrinc/nlp_project_final
+cd nlp_project_final/
+mkdir src
+mkdir dtset
 ls
-ls templates/
-rm -f templates/index.html\~
-ls templates/
-ls templates/
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-cp templates/index.html ../../ch6/templates/index.html 
-python ../../ch6/app.py 
-python ../../ch6/app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app > report.txt
-cat report.txt 
-python app > report.txt
-cat report.txt 
-rm -f report.txt
-python app.py | tee -a report.txt
-cat report.txt 
-rm -f report.txt
-python app.py | tee -a report.txt
-python app.py | tee -a report.txt
-python app.py | tee -a report.txt
-python app.py | tee -a report.txt
-python app.py | tee -a report.txt
-python app.py | tee -a report.txt
-python app.py
-python app.py
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-python app.py 
-rm -f TEMP 
-python app.py 
 git status
-rm -rf ML_Project_7329516_6446136.zip
-rm -rf ML_Project_7329516_6446136/
+git checkout -b set-up-workspace
 git status
-rm -f TEMP 
 git status
-git reset ../Slides.pptx ../\~\$Slides.pptx
+ls
+ls
+ls -la
+ls
+ls -la
+cat .gitignore 
 git status
-git rm -rf .DS_Store 
-git rm -rf ./DS_Store 
-git rm -rf ./.DS_Store 
-rm -rf .DS_Store 
+git add dtset/
+git add src/
 git status
-git reset dataset.py.save 
 git status
-git add README.md ../Slides.pptx plot/ report.txt templates/
+ls
+ls dtset/
 git status
-git commit -m 'Api and brief doc'
-git push origin master
+git add .gitignore 
+git status
+rm -f dtset/.gitignore 
+ls
+cd src/
+ls
+ls
+cd Desktop/NLP/nlp_project_final/
+ls
+cd src/
+ls
+git status
+ls
+git status
+ls
+cd ..
+ls -l
+ls -la
+python src/app.py 
+python src/app.py 
+python src/app.py 
+python src/app.py 
+ls
+ls src/
+git status
+cd src/
+git status
+ls
+cd ..
+ls
+cat .gitignore 
+cd ..
+git status
+cd nlp_project_final/
+ls
+ls dtset/
+cat src/.gitignore 
+git status
+git add src/
+git status
+git reset
+git status
+git status
+git add src/
+git status
+pyvenv
+python -m venv src/
+cd src/
+ls
+cat pyvenv.cfg 
+git status
+git add .gitignore 
+git status
+git add ../.gitignore 
+git status
+pip list
+ls
+./bin/easy_install-3.7
+ls -la
+activate 
+ls
+pip list
+deactivate 
+where python
+which python
+conda deativate
+conda deactivate
+ls
+which python3
+rm -rf bin include/ lib/ pyvenv.cfg 
+ls
+/usr/bin/python
+/usr/bin/python3
+/usr/local/bin/python3.7
+python
+which python
+ls
+cd Desktop/NLP/nlp_project_final/
+ls
+cd src/
+/usr/local/bin/python3.7 -m venv .
+ls
+ls bin/
+git status
+ls -la bin/
+./bin/activate
+sudo ./bin/activate
+chmod +x ./bin/activate
+sudo ./bin/activate
+which python
+cat bin/activate
+activate
+which python
+deactivate
+source bin/activate
+source ./bin/activate
+source ./bin/activatek
+source ./bin/activate
+source ./bin/activate.csh
+source ./bin/activate
+which python
+source ./bin/activate.fish 
+/bin/bash
