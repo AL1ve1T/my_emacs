@@ -28,6 +28,8 @@
 (desktop-load-default)
 (desktop-read)
 
+(setq make-backup-files nil)
+
 " End of User Settings"
  '(package-selected-packages (quote (## company)))
 (custom-set-faces
