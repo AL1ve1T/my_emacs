@@ -3,6 +3,59 @@
 ;;; Code:
 
 
+;;;### (autoloads nil "auto-complete/auto-complete" "auto-complete/auto-complete.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from auto-complete/auto-complete.el
+
+(autoload 'auto-complete "auto-complete/auto-complete" "\
+Start auto-completion at current point.
+
+\(fn &optional SOURCES)" t nil)
+
+(autoload 'auto-complete-mode "auto-complete/auto-complete" "\
+AutoComplete mode
+
+\(fn &optional ARG)" t nil)
+
+(defvar global-auto-complete-mode nil "\
+Non-nil if Global Auto-Complete mode is enabled.
+See the `global-auto-complete-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-auto-complete-mode'.")
+
+(custom-autoload 'global-auto-complete-mode "auto-complete/auto-complete" nil)
+
+(autoload 'global-auto-complete-mode "auto-complete/auto-complete" "\
+Toggle Auto-Complete mode in all buffers.
+With prefix ARG, enable Global Auto-Complete mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Auto-Complete mode is enabled in all buffers where
+`auto-complete-mode-maybe' would do it.
+See `auto-complete-mode' for more information on Auto-Complete mode.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "auto-complete/auto-complete" '("auto-complete-mode" "ac-")))
+
+;;;***
+
+;;;### (autoloads nil "auto-complete/auto-complete-config" "auto-complete/auto-complete-config.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from auto-complete/auto-complete-config.el
+
+(autoload 'ac-config-default "auto-complete/auto-complete-config" "\
+
+
+\(fn)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "auto-complete/auto-complete-config" '("ac-")))
+
+;;;***
+
 ;;;### (autoloads nil "avy/avy" "avy/avy.el" (0 0 0 0))
 ;;; Generated autoloads from avy/avy.el
 
@@ -1270,6 +1323,13 @@ Whether expand-region should use subword expansions.")
 
 ;;;***
 
+;;;### (autoloads nil "fuzzy/fuzzy" "fuzzy/fuzzy.el" (0 0 0 0))
+;;; Generated autoloads from fuzzy/fuzzy.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "fuzzy/fuzzy" '("fuzzy-" "turn-o")))
+
+;;;***
+
 ;;;### (autoloads nil "jedi-core/jedi" "jedi-core/jedi.el" (0 0 0
 ;;;;;;  0))
 ;;; Generated autoloads from jedi-core/jedi.el
@@ -1411,6 +1471,13 @@ Blocking version `jedi:install-server'.
 
 ;;;***
 
+;;;### (autoloads nil "popup/popup" "popup/popup.el" (0 0 0 0))
+;;; Generated autoloads from popup/popup.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "popup/popup" '("popup-")))
+
+;;;***
+
 ;;;### (autoloads nil "python-environment/python-environment" "python-environment/python-environment.el"
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from python-environment/python-environment.el
@@ -1427,9 +1494,10 @@ Blocking version `jedi:install-server'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("avy/avy-test.el" "el-get/el-get-install.el"
-;;;;;;  "expand-region/expand-region-pkg.el" "jedi-core/tryout-jedi.el")
-;;;;;;  (0 0 0 0))
+;;;### (autoloads nil nil ("auto-complete/auto-complete-pkg.el" "avy/avy-test.el"
+;;;;;;  "el-get/el-get-install.el" "expand-region/expand-region-pkg.el"
+;;;;;;  "jedi-core/tryout-jedi.el" "jedi/tryout-jedi.el") (0 0 0
+;;;;;;  0))
 
 ;;;***
 

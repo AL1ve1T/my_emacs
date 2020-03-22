@@ -1,48 +1,60 @@
-((avy status "installed" recipe
-	  (:name avy :description "Jump to things in Emacs tree-style." :type github :pkgname "abo-abo/avy" :depends
-			 (cl-lib)))
+((auto-complete status "installed" recipe
+		(:name auto-complete :website "https://github.com/auto-complete/auto-complete" :description "The most intelligent auto-completion extension." :type github :pkgname "auto-complete/auto-complete" :depends
+		       (popup fuzzy)
+		       :features auto-complete-config :post-init
+		       (progn
+			 (add-to-list 'ac-dictionary-directories
+				      (expand-file-name "dict" default-directory))
+			 (ac-config-default))))
+ (avy status "installed" recipe
+      (:name avy :description "Jump to things in Emacs tree-style." :type github :pkgname "abo-abo/avy" :depends
+	     (cl-lib)))
  (cl-lib status "installed" recipe
-		 (:name cl-lib :builtin "24.3" :type elpa :description "Properly prefixed CL functions and macros" :website "http://elpa.gnu.org/packages/cl-lib.html"))
+	 (:name cl-lib :builtin "24.3" :type elpa :description "Properly prefixed CL functions and macros" :website "http://elpa.gnu.org/packages/cl-lib.html"))
  (company-jedi status "installed" recipe
-			   (:name company-jedi :depends
-					  (jedi-core company-mode)
-					  :after nil :description "Company backend for Python jedi." :website "https://github.com/syohex/emacs-company-jedi" :type github :pkgname "syohex/emacs-company-jedi"))
+	       (:name company-jedi :depends
+		      (jedi-core company-mode)
+		      :after nil :description "Company backend for Python jedi." :website "https://github.com/syohex/emacs-company-jedi" :type github :pkgname "syohex/emacs-company-jedi"))
  (company-mode status "installed" recipe
-			   (:name company-mode :website "http://company-mode.github.io/" :description "Modular in-buffer completion framework for Emacs" :type github :pkgname "company-mode/company-mode"))
+	       (:name company-mode :website "http://company-mode.github.io/" :description "Modular in-buffer completion framework for Emacs" :type github :pkgname "company-mode/company-mode"))
  (ctable status "installed" recipe
-		 (:name ctable :description "Table Component for elisp" :type github :pkgname "kiwanami/emacs-ctable"))
+	 (:name ctable :description "Table Component for elisp" :type github :pkgname "kiwanami/emacs-ctable"))
  (deferred status "installed" recipe
    (:name deferred :description "Simple asynchronous functions for emacs lisp." :type github :pkgname "kiwanami/emacs-deferred"))
  (el-get status "installed" recipe
-		 (:name el-get :website "https://github.com/dimitri/el-get#readme" :description "Manage the external elisp bits and pieces you depend upon." :type github :branch "master" :pkgname "dimitri/el-get" :info "." :compile
-				("el-get.*\\.el$" "methods/")
-				:features el-get :post-init
-				(when
-					(memq 'el-get
-						  (bound-and-true-p package-activated-list))
-				  (message "Deleting melpa bootstrap el-get")
-				  (unless package--initialized
-					(package-initialize t))
-				  (when
-					  (package-installed-p 'el-get)
-					(let
-						((feats
-						  (delete-dups
-						   (el-get-package-features
-							(el-get-elpa-package-directory 'el-get)))))
-					  (el-get-elpa-delete-package 'el-get)
-					  (dolist
-						  (feat feats)
-						(unload-feature feat t))))
-				  (require 'el-get))))
+	 (:name el-get :website "https://github.com/dimitri/el-get#readme" :description "Manage the external elisp bits and pieces you depend upon." :type github :branch "master" :pkgname "dimitri/el-get" :info "." :compile
+		("el-get.*\\.el$" "methods/")
+		:features el-get :post-init
+		(when
+		    (memq 'el-get
+			  (bound-and-true-p package-activated-list))
+		  (message "Deleting melpa bootstrap el-get")
+		  (unless package--initialized
+		    (package-initialize t))
+		  (when
+		      (package-installed-p 'el-get)
+		    (let
+			((feats
+			  (delete-dups
+			   (el-get-package-features
+			    (el-get-elpa-package-directory 'el-get)))))
+		      (el-get-elpa-delete-package 'el-get)
+		      (dolist
+			  (feat feats)
+			(unload-feature feat t))))
+		  (require 'el-get))))
  (epc status "installed" recipe
-	  (:name epc :description "An RPC stack for Emacs Lisp" :type github :pkgname "kiwanami/emacs-epc" :depends
-			 (deferred ctable)))
+      (:name epc :description "An RPC stack for Emacs Lisp" :type github :pkgname "kiwanami/emacs-epc" :depends
+	     (deferred ctable)))
  (expand-region status "installed" recipe
-				(:name expand-region :type github :pkgname "magnars/expand-region.el" :description "Expand region increases the selected region by semantic units. Just keep pressing the key until it selects what you want." :website "https://github.com/magnars/expand-region.el#readme"))
+		(:name expand-region :type github :pkgname "magnars/expand-region.el" :description "Expand region increases the selected region by semantic units. Just keep pressing the key until it selects what you want." :website "https://github.com/magnars/expand-region.el#readme"))
+ (fuzzy status "installed" recipe
+	(:name fuzzy :website "https://github.com/auto-complete/fuzzy-el" :description "Fuzzy matching utilities for GNU Emacs" :type github :pkgname "auto-complete/fuzzy-el"))
  (jedi-core status "installed" recipe
-			(:name jedi-core :type github :pkgname "tkf/emacs-jedi" :description "Python jedi core functionality for Emacs. Required for company-jedi" :minimum-emacs-version "24" :compile "jedi-core.el" :depends
-				   (epc python-environment cl-lib)))
+	    (:name jedi-core :type github :pkgname "tkf/emacs-jedi" :description "Python jedi core functionality for Emacs. Required for company-jedi" :minimum-emacs-version "24" :compile "jedi-core.el" :depends
+		   (epc python-environment cl-lib)))
+ (popup status "installed" recipe
+	(:name popup :website "https://github.com/auto-complete/popup-el" :description "Visual Popup Interface Library for Emacs" :type github :submodule nil :depends cl-lib :pkgname "auto-complete/popup-el"))
  (python-environment status "installed" recipe
-					 (:name python-environment :description "Python virtualenv API for Emacs Lisp" :type github :pkgname "tkf/emacs-python-environment" :depends
-							(deferred))))
+		     (:name python-environment :description "Python virtualenv API for Emacs Lisp" :type github :pkgname "tkf/emacs-python-environment" :depends
+			    (deferred))))

@@ -2,14 +2,6 @@
 	File with hooks
 "
 
-(add-hook 'after-init-hook 'global-company-mode)
-
-(defun my/python-mode-hook ()
-  (add-to-list 'company-backends 'company-jedi))
-
-(add-hook 'python-mode-hook 'my/python-mode-hook)
-(add-hook 'prog-mode-hook 'linum-mode)
-
 ; Some python related shit
 (defun how-many-region (begin end regexp &optional interactive)
   "Print number of non-trivial matches for REGEXP in region.                    
@@ -40,5 +32,7 @@
         (setq indent-tabs-mode nil)
         (setq tab-width 4)
         (setq python-indent-offset 4)))
+
+(add-hook 'prog-mode-hook 'linum-mode)
 
 (provide 'hooks_my)
