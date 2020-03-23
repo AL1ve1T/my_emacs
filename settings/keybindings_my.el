@@ -15,12 +15,16 @@
 (global-set-key [C-down] 'windmove-down)
 
 (global-set-key (kbd "C-`") 'neotree-toggle)
+(global-set-key (kbd "C-z") 'undo)
+(global-set-key (kbd "C-x c") 'kill-ring-save)
+(global-set-key (kbd "C-x v") 'yank)
+(global-set-key (kbd "C-x x") 'kill-region)
 
 ;;keep cursor at same position when scrolling
 (setq scroll-preserve-screen-position 1)
 ;;scroll window up/down by one line
-(global-set-key (kbd "M-n") (kbd "C-u 2 C-v"))
-(global-set-key (kbd "M-p") (kbd "C-u 2 M-v"))
+(global-set-key (kbd "M-<down>") (kbd "C-u 2 C-v"))
+(global-set-key (kbd "M-<up>") (kbd "C-u 2 M-v"))
 
 "
 	Avy bindings

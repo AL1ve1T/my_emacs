@@ -25,6 +25,10 @@
 (require 'neotree)
 (tool-bar-mode -1)
 
+(require 'yascroll)
+(scroll-bar-mode -1)
+(global-yascroll-bar-mode)
+
 (desktop-load-default)
 (desktop-read)
 
