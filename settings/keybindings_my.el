@@ -2,17 +2,18 @@
     File contains key bindings
 "
 
-(if (eq system-type 'darwin)
-  (global-set-key [s-left] 'windmove-left)
-  (global-set-key [s-right] 'windmove-right)
-  (global-set-key [s-up] 'windmove-up)
-  (global-set-key [s-down] 'windmove-down)
-)
-
 (global-set-key [C-left] 'windmove-left)
 (global-set-key [C-right] 'windmove-right)
 (global-set-key [C-up] 'windmove-up)
 (global-set-key [C-down] 'windmove-down)
+
+(if (eq system-type 'darwin)
+    (progn
+      (global-set-key [s-left] 'windmove-left)
+      (global-set-key [s-right] 'windmove-right)
+      (global-set-key [s-up] 'windmove-up)
+      (global-set-key [s-down] 'windmove-down)
+      ))
 
 (global-set-key (kbd "C-`") 'neotree-toggle)
 (global-set-key (kbd "C-z") 'undo)
