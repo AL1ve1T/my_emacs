@@ -20,6 +20,8 @@
 (load-theme 'one-dark t)
 (set-face-attribute 'default nil :height 110)
 
+(add-to-list 'load-path "~/.emacs.d/site-list/rainbow/rainbow-delimiters.el")
+
 (require 'keybindings_my)
 (require 'hooks_my)
 (require 'neotree)
@@ -63,6 +65,5 @@
  '(custom-safe-themes
    (quote
     ("a77ced882e25028e994d168a612c763a4feb8c4ab67c5ff48688654d0264370c" default)))
- '(delete-selection-mode nil)
- '(package-selected-packages (quote (soothe-theme elpy company))))
+ '(package-selected-packages (quote (elpy company))))
 

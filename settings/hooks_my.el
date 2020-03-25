@@ -34,5 +34,6 @@
         (setq python-indent-offset 4)))
 
 (add-hook 'prog-mode-hook 'linum-mode)
+(set-face-foreground 'linum "#FFFFFF")
 
 (provide 'hooks_my)
