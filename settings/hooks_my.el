@@ -33,7 +33,8 @@
         (setq tab-width 4)
         (setq python-indent-offset 4)))
 
-(add-hook 'prog-mode-hook 'linum-mode)
-(set-face-foreground 'linum "#FFFFFF")
+(add-hook 'prog-mode-hook
+	  (linum-mode)
+	  (set-face-foreground 'linum "#ffffff"))
 
 (provide 'hooks_my)
