@@ -3,59 +3,6 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "auto-complete/auto-complete" "auto-complete/auto-complete.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from auto-complete/auto-complete.el
-
-(autoload 'auto-complete "auto-complete/auto-complete" "\
-Start auto-completion at current point.
-
-\(fn &optional SOURCES)" t nil)
-
-(autoload 'auto-complete-mode "auto-complete/auto-complete" "\
-AutoComplete mode
-
-\(fn &optional ARG)" t nil)
-
-(defvar global-auto-complete-mode nil "\
-Non-nil if Global Auto-Complete mode is enabled.
-See the `global-auto-complete-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `global-auto-complete-mode'.")
-
-(custom-autoload 'global-auto-complete-mode "auto-complete/auto-complete" nil)
-
-(autoload 'global-auto-complete-mode "auto-complete/auto-complete" "\
-Toggle Auto-Complete mode in all buffers.
-With prefix ARG, enable Global Auto-Complete mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Auto-Complete mode is enabled in all buffers where
-`auto-complete-mode-maybe' would do it.
-See `auto-complete-mode' for more information on Auto-Complete mode.
-
-\(fn &optional ARG)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "auto-complete/auto-complete" '("auto-complete-mode" "ac-")))
-
-;;;***
-
-;;;### (autoloads nil "auto-complete/auto-complete-config" "auto-complete/auto-complete-config.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from auto-complete/auto-complete-config.el
-
-(autoload 'ac-config-default "auto-complete/auto-complete-config" "\
-
-
-\(fn)" nil nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "auto-complete/auto-complete-config" '("ac-")))
-
-;;;***
-
 ;;;### (autoloads nil "el-get/el-get" "el-get/el-get.el" (0 0 0 0))
 ;;; Generated autoloads from el-get/el-get.el
 
@@ -325,13 +272,6 @@ Display a list of packages.
 ;;; Generated autoloads from el-get/el-get-status.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-status" '("el-get-")))
-
-;;;***
-
-;;;### (autoloads nil "popup/popup" "popup/popup.el" (0 0 0 0))
-;;; Generated autoloads from popup/popup.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "popup/popup" '("popup-")))
 
 ;;;***
 

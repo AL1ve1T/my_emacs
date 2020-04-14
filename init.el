@@ -16,8 +16,11 @@
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
 
+""" GOLANG settings """
+
+""" End """
+
 (require 'one-dark-theme)
-(load-theme 'one-dark t)
 (set-face-attribute 'default nil :height 110)
 
 (add-to-list 'load-path "~/.emacs.d/site-list/rainbow/rainbow-delimiters.el")
@@ -62,8 +65,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-quickhelp-color-background "#3E4452")
+ '(company-quickhelp-color-foreground "#ABB2BF")
  '(custom-safe-themes
    (quote
-    ("a77ced882e25028e994d168a612c763a4feb8c4ab67c5ff48688654d0264370c" default)))
- '(package-selected-packages (quote (elpy company))))
+    ("46726da889aa1616ad3e9995b265883c7121ff1895d6fbdbfafc51d2cd11457d" "a77ced882e25028e994d168a612c763a4feb8c4ab67c5ff48688654d0264370c" default)))
+ '(delete-selection-mode nil)
+ '(package-selected-packages
+   (quote
+    (flycheck-gometalinter go-autocomplete go-mode go-guru flycheck-golangci-lint elpy company))))
 

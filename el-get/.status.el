@@ -1,12 +1,4 @@
-((auto-complete status "installed" recipe
-		(:name auto-complete :website "https://github.com/auto-complete/auto-complete" :description "The most intelligent auto-completion extension." :type github :pkgname "auto-complete/auto-complete" :depends
-		       (popup fuzzy)
-		       :features auto-complete-config :post-init
-		       (progn
-			 (add-to-list 'ac-dictionary-directories
-				      (expand-file-name "dict" default-directory))
-			 (ac-config-default))))
- (avy status "installed" recipe
+((avy status "installed" recipe
       (:name avy :description "Jump to things in Emacs tree-style." :type github :pkgname "abo-abo/avy" :depends
 	     (cl-lib)))
  (cl-lib status "installed" recipe
@@ -55,8 +47,6 @@
 		   (epc python-environment cl-lib)))
  (neotree status "installed" recipe
 	  (:name neotree :website "https://github.com/jaypei/emacs-neotree" :description "An Emacs tree plugin like NerdTree for Vim." :type github :branch "master" :pkgname "jaypei/emacs-neotree"))
- (popup status "installed" recipe
-	(:name popup :website "https://github.com/auto-complete/popup-el" :description "Visual Popup Interface Library for Emacs" :type github :submodule nil :depends cl-lib :pkgname "auto-complete/popup-el"))
  (powerline status "installed" recipe
 	    (:name powerline :website "https://github.com/milkypostman/powerline" :depends
 		   (cl-lib)
