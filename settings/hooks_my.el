@@ -33,8 +33,27 @@
         (setq tab-width 4)
         (setq python-indent-offset 4)))
 
-(add-hook 'prog-mode-hook
+(defun my-go-mode-hook ()
+  ; Call Gofmt before saving                                                    
+  (add-hook 'before-save-hook 'gofmt-before-save)
+  (if (not (string-match "go" compile-command))
+      (set (make-local-variable 'compile-command)
+           "go build -v && go test -v && go vet"))
+  ; Godef jump key binding                                                      
+  (local-set-key (kbd "M-.") 'godef-jump)
+  (local-set-key (kbd "M-*") 'pop-tag-mark)
+  (setq tab-width 4)
+  )
+(add-hook 'go-mode-hook 'my-go-mode-hook)
+
+(defun auto-complete-for-go ()
+  (auto-complete-mode 1))
+(add-hook 'go-mode-hook 'auto-complete-for-go)
+(with-eval-after-load 'go-mode
+   (require 'go-autocomplete))
+
+(add-hook 'prog-mode-hook (lambda () 
 	  (linum-mode)
-	  (set-face-foreground 'linum "#ffffff"))
+	  (set-face-foreground 'linum "#ffffff")))
 
 (provide 'hooks_my)

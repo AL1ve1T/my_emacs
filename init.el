@@ -73,5 +73,5 @@
  '(delete-selection-mode nil)
  '(package-selected-packages
    (quote
-    (flycheck-gometalinter go-autocomplete go-mode go-guru flycheck-golangci-lint elpy company))))
+    (exec-path-from-shell flycheck-gometalinter go-autocomplete go-mode go-guru flycheck-golangci-lint elpy company))))
 
